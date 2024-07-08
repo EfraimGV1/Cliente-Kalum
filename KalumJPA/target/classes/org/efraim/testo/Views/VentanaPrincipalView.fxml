@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.efraim.testo.Controllers.VentanaPrincipalController">
+   <children>
+      <MenuBar layoutX="202.0" layoutY="188.0" prefHeight="25.0" prefWidth="236.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Bases de Datos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#mostrarVentanaSalon" text="Salon" />
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarVentanaCarrera" text="Carrera Tecnica" />
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarVentanaInstructor" text="Instructor" />
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarVentanaHorario" text="Horario" />
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarVentanaClase" text="Clases" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Acerca de..." />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label prefHeight="161.0" prefWidth="640.0" text="                Bienvenido al Control academico Kalum">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Line endX="539.0" layoutX="101.0" layoutY="128.0" startX="-100.0" />
+      <Label layoutX="202.0" layoutY="153.0" prefHeight="40.0" prefWidth="236.0" text="          ¿Que cambios desea realizar?" />
+   </children>
+</AnchorPane>
